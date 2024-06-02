@@ -1,0 +1,96 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.logo a {
+  display: flex;
+  gap: .5rem;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.menu ul li a {
+  color: #fefefe;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 20px;
+  transition: .3s;
+}
+
+.menu ul li a:hover {
+  color: #F64348;
+}
+
+.menu .comprarIngressos > a {
+  background-color: #fefefe;
+  width: 258px;
+  height: 56px;
+  padding: 18px 34px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 19.5px;
+  transition: .4s ease;
+}
+
+.menu .comprarIngressos > a:hover {
+  background-color: #F64348;
+  color: #fefefe;
+}
+
+.btnMenu {
+  display: none;
+}
+
+@media (max-width:1000px) {
+  .btnMenu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btnMenu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+  }
+  
+  nav.menuActive {
+    transition: .3s ease;
+    opacity: 1;
+    height: 400px;
+    visibility: visible;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #222;
+  }
+}
