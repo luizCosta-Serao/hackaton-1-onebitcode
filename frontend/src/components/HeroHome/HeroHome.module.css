@@ -1,0 +1,191 @@
+.heroHome {
+  padding: 0 1rem;
+}
+
+.titleHero {
+  color: #fefefe;
+  font-size: 4.5rem;
+  max-width: 970px;
+  line-height: 87.77px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 67px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+.titleHero > span {
+  color: #F64348;
+}
+
+.heroHome p {
+  font-size: 1.5rem;
+  max-width: 970px;
+  width: 100%;
+  text-align: center;
+  line-height: 38px;
+  font-family: "Raleway", sans-serif;
+  color: #fefefe;
+  margin: 0 auto 2.5rem auto;
+}
+
+.actionsHero {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 5.25rem;
+}
+
+.actionsHero .start {
+  background-color: #F64348;
+  cursor: pointer;
+  color: #fefefe;
+  width: 144px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19.5px;
+  font-family: "Montserrat", sans-serif;
+  transition: .3s;
+}
+
+.actionsHero .start:hover {
+  opacity: .7;
+}
+
+.actionsHero .video {
+  background-color: transparent;
+  border: none;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  gap: 0.56rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 28px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.actionsHero .video:hover {
+  opacity: .7;
+}
+
+.countDate span {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fefefe;
+  opacity: .6;
+  font-size: 9rem;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900; 
+}
+
+.leaveVideo {
+  font-size: 2rem;
+  background-color: #F64348;
+  color: #fefefe;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: .3s;
+  animation: .3s;
+}
+
+.leaveVideo:hover {
+  opacity: .7;
+}
+
+.containerVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(20, 20, 20, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 1rem;
+}
+
+.containerVideo iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .countDate span {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .titleHero {
+    font-size: 3.5rem;
+  }
+  
+  .countDate span {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .titleHero {
+    font-size: 3rem;
+  }
+
+  .heroHome p {
+    font-size: 1.2rem;
+  }
+
+  .countDate span {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 678px) {
+  .titleHero {
+    font-size: 2rem;
+    line-height: 60px;
+  }
+
+  .countDate span {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroHome p {
+    font-size: 1.1rem;
+  }
+
+  .actionsHero {
+    gap: 1.5rem;
+  }
+
+  .actionsHero .video {
+    font-size: 1rem;
+  }
+
+  .countDate span {
+    font-size: 2rem;
+  }
+}
