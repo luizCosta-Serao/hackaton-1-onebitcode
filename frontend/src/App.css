@@ -25,4 +25,29 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 964px;
   height: 3000px;
+  background-color: #5C5C5C;
+}
+
+@media (max-width: 786px) {
+  body {
+    background-size: 100% 910px;
+  }
+}
+
+@media (max-width: 678px) {
+  body {
+    background-size: 100% 830px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    background-size: 100% 870px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 100% 930px;
+  }
 }
