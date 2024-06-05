@@ -1,0 +1,87 @@
+.artistas {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 191px 2rem 0 2rem;
+}
+
+.conteudoArtistas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 470px;
+  width: 100%;
+}
+
+.conteudoArtistas h2 {
+  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 2.125rem;
+  line-height: 44.2px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.conteudoArtistas p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #f9f9f9;
+  opacity: .7;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.conteudoArtistas .listaCompleta {
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 18px 32px;
+  border-radius: 8px;
+  width: 283px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5px;
+  transition: .3s;
+}
+
+.conteudoArtistas .listaCompleta:hover {
+  opacity: .7;
+}
+
+.imgArtistas {
+  width: 100%;
+}
+
+.imgArtistas img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .conteudoArtistas p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 876px) {
+  .artistas {
+    flex-direction: column-reverse;
+  }
+
+  .conteudoArtistas {
+    text-align: center;
+  }
+
+  .conteudoArtistas .listaCompleta {
+    margin: 0 auto;
+  }
+
+  .imgArtistas {
+    max-width: 500px;
+  }
+}
