@@ -1,0 +1,344 @@
+.programacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.showVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(20, 20, 20, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 1rem;
+}
+
+.leaveVideoBtn {
+  background-color: #f34348;
+  color: #f9f9f9;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.programacao > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 44.2px;
+  margin-bottom: 3.75rem;
+  color: #f9f9f9;
+}
+
+.days {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.days li {
+  border-bottom: 4px solid #222;
+  opacity: .5;
+  max-width: 370px;
+  width: 100%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.days li:hover h3 {
+  color: #222;
+}
+
+.days li h3 {
+  color: #f9f9f9;
+  font-weight: 800;
+  font-size: 1.5rem;
+  opacity: .5;
+  line-height: 38px;
+}
+
+.days li span {
+  opacity: .5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19.5px;
+  display: block;
+  padding-bottom: 1.25rem;
+}
+
+.days li.dayActive {
+  opacity: 1;
+}
+
+.days li.dayActive h3 {
+  color: #222;
+  opacity: 1;
+}
+
+.programacaoDoDia {
+  display: none;
+  animation: show .5s forwards;
+}
+
+.programacaoDoDia.programacaoActive {
+  display: block;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.programacao table {
+  border: 1px solid #f9f9f9;
+  border-radius: 24px;
+  margin-top: 40px;
+}
+
+.programacao table thead {
+  display: grid;
+  grid-template-columns: 230px 370px 270px 100px;
+  padding: 40px;
+  gap: 2rem;
+  background-color: rgba(66, 66, 66, .2);
+}
+
+.programacao table thead th {
+  color: #f9f9f9;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 38px;
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+.programacao table tbody tr {
+  padding: 40px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 230px 370px 270px 100px;
+  border-bottom: 1px solid #f9f9f9;
+  width: 98.9%;
+}
+
+.programacao table tbody tr:nth-of-type(3) {
+  border-bottom: none;
+}
+
+.programacao table tbody tr td {
+  color: #f9f9f9;
+}
+
+.programacao table tbody .hour {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  color: #f9f9f9;
+}
+
+.programacao table tbody .descricao {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #f9f9f9;
+}
+
+.programacao table tbody .artistas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.programacao table tbody .previa {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5rem;
+  text-align: left;
+  color: #f9f9f9;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.programacao table tbody .previa:hover {
+  opacity: .7;
+}
+
+.programacao table tbody .aoVivo a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5rem;
+  text-align: left;
+  color: #f34348;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.programacao table tbody .aoVivo a:hover {
+  opacity: .7;
+}
+
+.programacao table tbody .emBreve {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19.5rem;
+  text-align: left;
+  color: #f9f9f9;
+  width: 120px;
+}
+
+.programacao table tbody .itemArtista {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.programacao table tbody .itemArtista div > h4 {
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.programacao table tbody .itemArtista div > span {
+  opacity: .5;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f9f9f9;
+}
+
+.programacao table tbody .itemArtista div > span > b {
+  font-weight: 700;
+}
+
+@media (max-width: 1250px) {
+  .programacao table {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .programacao table thead {
+    grid-template-columns: 170px 200px 160px 100px;
+  }
+
+  .programacao table tbody tr{
+    grid-template-columns: 170px 200px 160px 100px;
+  } 
+}
+
+@media (max-width: 900px) {
+  .programacao table {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .programacao table thead {
+    grid-template-columns: 100px 150px 100px 150px;
+    gap: 2rem;
+  }
+
+  .programacao table tbody tr{
+    grid-template-columns: 100px 150px 100px 150px;
+    padding: 2rem 1rem;
+    gap: 2.4rem;
+    
+  } 
+
+  .programacao table tbody tr {
+    max-width: 605px;
+  }
+}
+
+@media (max-width: 700px) {
+  .programacao table thead th:nth-of-type(2) {
+    display: none;
+  }
+
+  .programacao table tbody .descricao {
+    display: none;
+  }
+
+  .programacao table thead {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .programacao table tbody tr{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .programacao table tbody tr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .programacao table thead {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .programacao table tbody tr {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .programacao table tbody .aoVivo {
+    width: 100%;
+    height: 200px;
+    grid-column: 1 / -1;
+    height: 40px;
+    justify-content: center;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  .programacao table tbody .aoVivo a {
+    line-height: 40px;
+  }
+
+  .programacao table tbody .previa {
+    width: 100%;
+    height: 40px;
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .programacao table tbody .emBreve {
+    width: 100%;
+    height: 40px;
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+}
