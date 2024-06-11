@@ -242,10 +242,9 @@
 
 @media (max-width: 1250px) {
   .programacao table {
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
   }
   
   .programacao table thead {
