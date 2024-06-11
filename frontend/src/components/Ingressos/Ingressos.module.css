@@ -1,0 +1,243 @@
+.ingressos {
+  padding: 100px 1rem;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.ingressos > h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #f9f9f9;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 60px;
+}
+
+.ingressoBasico {
+  background-color: #fefefe;
+  max-width: 370px;
+  width: 100%;
+  border-top: 4px solid #222;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.ingressoBasico h2 {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 38px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.ingressoBasico h1 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  line-height: 73.14px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.ingressoBasico p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ingressoBasico a {
+  border: 1px solid #222;
+  border-radius: 8px;
+  background: transparent;
+  width: 170px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 34px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #222;
+  transition: .3s;
+}
+
+.ingressoBasico a:hover {
+  background-color: #222;
+  color: #fefefe;
+}
+
+.ingressoPadrao {
+  background-color: #fefefe;
+  max-width: 370px;
+  width: 100%;
+  border-top: 4px solid #222;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.ingressoPadrao h2 {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 38px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.ingressoPadrao h1 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  line-height: 73.14px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.ingressoPadrao p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: #222;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ingressoPadrao a {
+  border: 1px solid #222;
+  border-radius: 8px;
+  background: #222;
+  width: 170px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 34px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #fefefe;
+  transition: .3s;
+}
+
+.ingressoPadrao a:hover {
+  background-color: transparent;
+  color: #222;
+}
+
+
+.ingressoVip {
+  background-color: #fefefe;
+  max-width: 370px;
+  width: 100%;
+  border-top: 4px solid #F64348;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.ingressoVip h2 {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  line-height: 38px;
+  text-align: center;
+  color: #F64348;
+  margin-bottom: 15px;
+}
+
+.ingressoVip h1 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  line-height: 73.14px;
+  text-align: center;
+  color: #F64348;
+  margin-bottom: 30px;
+}
+
+.ingressoVip p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: #F64348;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ingressoVip a {
+  border: 1px solid #F64348;
+  border-radius: 8px;
+  background: transparent;
+  width: 170px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 34px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #F64348;
+  transition: .3s;
+}
+
+.ingressoVip a:hover {
+  background-color: #F64348;
+  color: #fefefe;
+}
+
+@media (max-width: 1250px) {
+  .ingressos {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .ingressos {
+    grid-template-columns: 370px 370px;
+  }
+
+  .ingressoVip {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 876px) {
+  .ingressos {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .ingressoBasico,
+  .ingressoPadrao,
+  .ingressoVip {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .ingressos > h1 {
+    font-size: 30px;
+  }
+}
