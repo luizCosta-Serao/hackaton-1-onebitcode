@@ -1,0 +1,26 @@
+.investidores {
+  padding: 180px 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.investidores > h1 {
+  color: #f9f9f9;
+  margin-bottom: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  line-height: 44.2px;
+  text-align: center;
+}
+
+.investidoresImg {
+  gap: 60px 130px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.investidoresImg img {
+  width: 170px;
+}
